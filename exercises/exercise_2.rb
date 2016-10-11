@@ -7,7 +7,9 @@ puts "----------"
 @store1 = Store.find(1)
 @store2 = Store.find(2)
 
-@store1.name = "Amna's Store"
-@store1.save
+@store1.update(name: "Amna's Store")
 
-puts @store1.inspect
+# @store1.name = "Amna's Store"
+# @store1.save
+
+# puts @store1.inspect
