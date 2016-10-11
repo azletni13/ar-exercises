@@ -35,7 +35,6 @@ end
 
 @womens_and_under_1M = Store.where("annual_revenue < ?", 1000000).where(womens_apparel: true).pluck(:name, :annual_revenue)
 
-
 @womens_and_under_1M.each do |row|
   pp row
 end
